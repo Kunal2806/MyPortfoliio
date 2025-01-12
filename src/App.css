@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App */
+
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+
+.NavContainer {
+  height: 50px;
+  width: 80vw;
+  border: 2px solid #739CD0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 10px 0px 10px 0px;
+  position: fixed;
+}
+
+.NavList {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.NavList > li > a{
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+.inactive {
+  padding: 8px;
+  background-color: white;
+  box-shadow: 2px 2px lightblue;
+  border-radius: 15px;
+}
+.active {
+  padding: 8px;
+  background-color: lightblue;
+  box-shadow: 2px 2px white;
+  border-radius: 15px;
+}
+
+
+.ContentContainer {
+  height: 95vh;
+  width: 80vw;
+  border: 2px solid #000000;
+  margin-top: 60px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
