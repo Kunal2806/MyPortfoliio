@@ -1,7 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: default;
 }
 
 /* App */
@@ -12,18 +17,34 @@
   align-items: center;
 }
 
+.ContentContainer {
+  height: 95vh;
+  width: 80vw;
+  border: 2px solid #000000;
+  margin-bottom: 60px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 20px grey;
+
+}
+.ContentContainer:hover {
+  box-shadow: 2px 2px 20px black;
+
+}
+
 /* Navbar */
 
 .NavContainer {
   height: 50px;
   width: 80vw;
-  border: 2px solid #739CD0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   margin: 10px 0px 10px 0px;
+  border-left: 2px solid skyblue;
+  border-right: 2px solid skyblue;
+  border-top: 2px solid skyblue;
+  box-shadow: 1px 4px 20px skyblue;
   position: fixed;
+  background-color: white;
 }
 
 .NavList {
@@ -39,27 +60,85 @@
   width: 100%;
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
+
 .inactive {
   padding: 8px;
   background-color: white;
   box-shadow: 2px 2px lightblue;
   border-radius: 15px;
+  border: 2px solid lightblue;
+  cursor: pointer;
+}
+.inactive:hover{
+  box-shadow: 2px 2px 20px skyblue;
 }
 .active {
   padding: 8px;
   background-color: lightblue;
-  box-shadow: 2px 2px white;
+  box-shadow: 2px 2px black;
   border-radius: 15px;
+  border: 2px solid black;
+  cursor: pointer;
 }
 
 
-.ContentContainer {
-  height: 95vh;
-  width: 80vw;
-  border: 2px solid #000000;
-  margin-top: 60px;
-  display: flex; 
-  align-items: center;
+/* <Home /> */
+
+#home {
+  display: flex;
+}
+
+.homeIntro {
+  height: 100%;
+  width: 50%;
+  background-color: #d8d8d8;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+.homeIntroDetails {
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+#t1{
+  font-size: 40px;
+}
+
+#t2{
+  font-size: 70px;
+}
+
+#t3{
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bolder;
+  color: #909090;
+}
+
+.homeIntroImage {
+  display: flex;
+  width: 60%;
+  margin-left: 80px;
+  margin-top: 20px;
+  gap: 10px;
+}
+.homeIntroImage img {
+  height: 40px;
+  width: 40px;
+}
+.homeIntroImage img:hover{
+  box-shadow: 2px 2px 20px pink;
+}
+
+.homePic  {
+  height: 100%;
+  width: 50%;
+  background-color: black;
 }
