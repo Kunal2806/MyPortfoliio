@@ -17,7 +17,9 @@ function Home() {
           <img src="./image/resume.png" alt="Resume" />
         </div>
       </div>
-      <div className="homePic"></div>
+      <div className="homePic">
+        <img src="./image/homePic.jpeg" alt="pic" />
+      </div>
     </div>
   )
 }
