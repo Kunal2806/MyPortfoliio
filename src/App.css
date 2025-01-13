@@ -244,3 +244,43 @@
 .bodyContent #p3{
   margin-top: 20px;
 }
+
+/* <skills/> */
+
+#Skills{
+  background-color: #5C46E9;
+}
+
+.skillContainer{
+  background-color: #2E227D;
+  height:75%;
+  width:90%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.column {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.skills:hover{
+  background-color: #5C46E9;
+  border-radius: 20px;
+  border: 2px solid white;
+  color:black;
+}
+.skills img{
+  height: 80px;
+  width: 80px;
+  margin-bottom: 4px;
+}
