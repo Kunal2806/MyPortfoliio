@@ -11,7 +11,7 @@ const handleChange = (e) =>{
 }
 const handleSubmit = async() =>{
   let data = detail;
-  await fetch("http://127.0.0.1:8787/post", {
+  await fetch("  https://backend.kunalgoswami-2806.workers.dev/post", {
     method: "POST",
     headers: {
       Accept: "application/json",
