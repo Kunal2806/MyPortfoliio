@@ -4,22 +4,22 @@ const Navbar = () => {
 
   const [menuSelect, setmenuSelect] = useState("Home");
 
-  const vh = 60 + window.innerHeight*0.95;
+  const vh = window.innerHeight*0.95;
   const handleScroll = () => {
 
     if(window.scrollY<vh){
       setmenuSelect("Home");
     }
-    else if(window.scrollY<2*vh){
+    else if(window.scrollY<2*(vh)){
       setmenuSelect("About")
     }
-    else if(window.scrollY<3*vh){
+    else if(window.scrollY<3*(vh)){
       setmenuSelect("Skills")
     }
-    else if(window.scrollY<4*vh){
+    else if(window.scrollY<4*(vh)){
       setmenuSelect("Education")
     }
-    else if(window.scrollY<5*vh){
+    else if(window.scrollY<5*(vh)){
       setmenuSelect("Contact")
     }
     

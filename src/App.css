@@ -21,8 +21,6 @@
 .ContentContainer {
   height: 95vh;
   width: 80vw;
-  border: 2px solid #000000;
-  margin-bottom: 60px;
   display: flex; 
   align-items: center;
   justify-content: center;
@@ -38,13 +36,15 @@
 
 .NavContainer {
   height: 50px;
-  width: 80vw;
+  width: 75vw;
   margin: 10px 0px 10px 0px;
   border-left: 2px solid skyblue;
   border-right: 2px solid skyblue;
   border-top: 2px solid skyblue;
   box-shadow: 1px 4px 20px skyblue;
   position: fixed;
+  border-radius: 10px;
+
 }
 
 .NavList {
@@ -53,6 +53,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color:white;
+  border: 2px solid skyblue;
+  border-radius: 10px;
+
 }
 
 .NavList > li > a{
@@ -271,6 +275,7 @@
   color: white;
   font-family: Montserrat;
   font-weight: bold;
+  border: 2px solid transparent
 }
 
 .skills:hover{
@@ -406,7 +411,7 @@ input[type="number"]::-webkit-outer-spin-button {
   padding-left: 20px;
 }
 
-.contactDetails button {
+.contactDetails .button {
   background-color: green;
   color: white;
   font-size: 20px;
@@ -415,6 +420,6 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 25px;
   margin-left: 300px;
 }
-.contactDetails button:active{
+.contactDetails .button:active{
   background-color: darkgreen;
 }
